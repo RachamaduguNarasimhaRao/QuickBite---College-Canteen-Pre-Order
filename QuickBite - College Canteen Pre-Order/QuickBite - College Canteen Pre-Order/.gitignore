@@ -1,0 +1,9 @@
+dist/
+node_modules/
+.wrangler/
+.dev.vars
+worker-configuration.d.ts
+
+# Local Miniflare persistence (D1, KV, etc.)
+.mf/
+.env.local

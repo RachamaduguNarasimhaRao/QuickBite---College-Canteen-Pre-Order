@@ -1,0 +1,13 @@
+# Copy this file to `.dev.vars` and fill in real values for local development.
+# Miniflare (used by the Cloudflare vite plugin) will read `.dev.vars`.
+# .dev.vars is already ignored by git in this repo.
+
+MOCHA_USERS_SERVICE_API_URL=https://your-users-service.example
+MOCHA_USERS_SERVICE_API_KEY=your_local_api_key_here
+
+# Optional: ordering/delivery windows for local dev
+ORDER_TZ=Asia/Kolkata
+ORDER_START=21:00
+ORDER_END=00:00
+DELIVERY_START=13:00
+DELIVERY_END=13:30

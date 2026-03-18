@@ -1,0 +1,144 @@
+
+> mocha-app@0.0.0 dev
+> vite
+
+Using vars defined in .env.local
+
+  [32m[1mVITE[22m v7.2.7[39m  [2mready in [0m[1m1965[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.1.5:[1m5173[22m/[39m
+  [32m➜[39m  [1mDebug[22m:   [2m[33mhttp://localhost:[1m5173[22m[2m/__debug[39m[22m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+FAILED D1 QUERY:
+CREATE TABLE IF NOT EXISTS user_roles (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          user_id TEXT NOT NULL UNIQUE,
+          role TEXT NOT NULL,
+          created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+          updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+ERROR: Error: internal error; reference = viu073tk0dsjqp5anvtqroca
+    at D1DatabaseSessionAlwaysPrimary._send (cloudflare-internal:d1-api:159:26)
+    at D1DatabaseSessionAlwaysPrimary._sendOrThrow (cloudflare-internal:d1-api:135:25)
+    at cloudflare-internal:d1-api:348:41
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:168:11
+    at initializeDatabase (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:215:5)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:224:3
+    at dispatch (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:36:17)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:714:25
+    at maybeCaptureError (workers/runner-worker.js:47:10) {
+  remote: true
+}
+Failed to initialize database tables: Error: internal error; reference = viu073tk0dsjqp5anvtqroca
+    at D1DatabaseSessionAlwaysPrimary._send (cloudflare-internal:d1-api:159:26)
+    at D1DatabaseSessionAlwaysPrimary._sendOrThrow (cloudflare-internal:d1-api:135:25)
+    at cloudflare-internal:d1-api:348:41
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:168:11
+    at initializeDatabase (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:215:5)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:224:3
+    at dispatch (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:36:17)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:714:25
+    at maybeCaptureError (workers/runner-worker.js:47:10) {
+  remote: true
+}
+Worker error: Error: internal error; reference = viu073tk0dsjqp5anvtqroca
+    at D1DatabaseSessionAlwaysPrimary._send (cloudflare-internal:d1-api:159:26)
+    at D1DatabaseSessionAlwaysPrimary._sendOrThrow (cloudflare-internal:d1-api:135:25)
+    at cloudflare-internal:d1-api:348:41
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:168:11
+    at initializeDatabase (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:215:5)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:224:3
+    at dispatch (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:36:17)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:714:25
+    at maybeCaptureError (workers/runner-worker.js:47:10) {
+  remote: true
+}
+FAILED D1 QUERY:
+CREATE TABLE IF NOT EXISTS user_roles (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          user_id TEXT NOT NULL UNIQUE,
+          role TEXT NOT NULL,
+          created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+          updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+ERROR: Error: internal error; reference = epvp0etc77ku3d5jolh69leh
+    at D1DatabaseSessionAlwaysPrimary._send (cloudflare-internal:d1-api:159:26)
+    at D1DatabaseSessionAlwaysPrimary._sendOrThrow (cloudflare-internal:d1-api:135:25)
+    at cloudflare-internal:d1-api:348:41
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:168:11
+    at initializeDatabase (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:215:5)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:224:3
+    at dispatch (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:36:17)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:714:25
+    at maybeCaptureError (workers/runner-worker.js:47:10) {
+  remote: true
+}
+Failed to initialize database tables: Error: internal error; reference = epvp0etc77ku3d5jolh69leh
+    at D1DatabaseSessionAlwaysPrimary._send (cloudflare-internal:d1-api:159:26)
+    at D1DatabaseSessionAlwaysPrimary._sendOrThrow (cloudflare-internal:d1-api:135:25)
+    at cloudflare-internal:d1-api:348:41
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:168:11
+    at initializeDatabase (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:215:5)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:224:3
+    at dispatch (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:36:17)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:714:25
+    at maybeCaptureError (workers/runner-worker.js:47:10) {
+  remote: true
+}
+Worker error: Error: internal error; reference = epvp0etc77ku3d5jolh69leh
+    at D1DatabaseSessionAlwaysPrimary._send (cloudflare-internal:d1-api:159:26)
+    at D1DatabaseSessionAlwaysPrimary._sendOrThrow (cloudflare-internal:d1-api:135:25)
+    at cloudflare-internal:d1-api:348:41
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:168:11
+    at initializeDatabase (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:215:5)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:224:3
+    at dispatch (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:36:17)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:714:25
+    at maybeCaptureError (workers/runner-worker.js:47:10) {
+  remote: true
+}
+FAILED D1 QUERY:
+CREATE TABLE IF NOT EXISTS user_roles (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          user_id TEXT NOT NULL UNIQUE,
+          role TEXT NOT NULL,
+          created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+          updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+ERROR: Error: internal error; reference = qu5thqi7krgu7a1339ikpv78
+    at D1DatabaseSessionAlwaysPrimary._send (cloudflare-internal:d1-api:159:26)
+    at D1DatabaseSessionAlwaysPrimary._sendOrThrow (cloudflare-internal:d1-api:135:25)
+    at cloudflare-internal:d1-api:348:41
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:168:11
+    at initializeDatabase (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:215:5)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:224:3
+    at dispatch (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:36:17)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:714:25
+    at maybeCaptureError (workers/runner-worker.js:47:10) {
+  remote: true
+}
+Failed to initialize database tables: Error: internal error; reference = qu5thqi7krgu7a1339ikpv78
+    at D1DatabaseSessionAlwaysPrimary._send (cloudflare-internal:d1-api:159:26)
+    at D1DatabaseSessionAlwaysPrimary._sendOrThrow (cloudflare-internal:d1-api:135:25)
+    at cloudflare-internal:d1-api:348:41
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:168:11
+    at initializeDatabase (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:215:5)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:224:3
+    at dispatch (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:36:17)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:714:25
+    at maybeCaptureError (workers/runner-worker.js:47:10) {
+  remote: true
+}
+Worker error: Error: internal error; reference = qu5thqi7krgu7a1339ikpv78
+    at D1DatabaseSessionAlwaysPrimary._send (cloudflare-internal:d1-api:159:26)
+    at D1DatabaseSessionAlwaysPrimary._sendOrThrow (cloudflare-internal:d1-api:135:25)
+    at cloudflare-internal:d1-api:348:41
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:168:11
+    at initializeDatabase (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:215:5)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/src/worker/index.ts:224:3
+    at dispatch (C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:36:17)
+    at C:/Users/Narasimha/Desktop/QuickBite - College Canteen Pre-Order (10)/QuickBite - College Canteen Pre-Order (4)/QuickBite - College Canteen Pre-Order/node_modules/.vite/deps_019afd8f_6aa5_75c6_b670_e0f2f24346ff/chunk-4XGT5BN5.js:714:25
+    at maybeCaptureError (workers/runner-worker.js:47:10) {
+  remote: true
+}

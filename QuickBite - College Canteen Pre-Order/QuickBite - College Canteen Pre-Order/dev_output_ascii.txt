@@ -1,0 +1,140 @@
+
+> mocha-app@0.0.0 dev
+> vite
+
+Using vars defined in .env.local
+
+  [32m[1mVITE[22m v7.2.7[39m  [2mready in [0m[1m11428[22m[2m[0m ms[22m
+
+  [32m???[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m???[39m  [1mNetwork[22m: [36mhttp://192.168.1.5:[1m5173[22m/[39m
+  [32m???[39m  [1mDebug[22m:   [2m[33mhttp://localhost:[1m5173[22m[2m/__debug[39m[22m
+[2m[32m  ???[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+node.exe : Failed to 
+initialize database 
+tables: Error: internal 
+error; reference = 
+js9egjudlc2rmci46k5s7b4h
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecifi    ed: 
+(Failed to ini    
+ti...c2rmci46k5s7b    
+4h:String) [], Rem    
+oteException
+    + FullyQualifiedEr    
+rorId : NativeComm    
+andError
+ 
+    at D1DatabaseSessionAlw
+aysPrimary._send (cloudflar
+e-internal:d1-api:159:26)
+    at D1DatabaseSessionAlw
+aysPrimary._sendOrThrow (cl
+oudflare-internal:d1-api:13
+5:25)
+    at cloudflare-internal:
+d1-api:348:41
+    at initializeDatabase (
+C:/Users/Narasimha/Desktop/
+QuickBite - College 
+Canteen Pre-Order 
+(10)/QuickBite - College 
+Canteen Pre-Order 
+(4)/QuickBite - College 
+Canteen Pre-Order/src/worke
+r/index.ts:89:7)
+    at C:/Users/Narasimha/D
+esktop/QuickBite - College 
+Canteen Pre-Order 
+(10)/QuickBite - College 
+Canteen Pre-Order 
+(4)/QuickBite - College 
+Canteen Pre-Order/src/worke
+r/index.ts:164:3
+    at dispatch (C:/Users/N
+arasimha/Desktop/QuickBite 
+- College Canteen 
+Pre-Order (10)/QuickBite - 
+College Canteen Pre-Order 
+(4)/QuickBite - College 
+Canteen Pre-Order/node_modu
+les/.vite/deps_019afd8f_6aa
+5_75c6_b670_e0f2f24346ff/ch
+unk-4XGT5BN5.js:36:17)
+    at C:/Users/Narasimha/D
+esktop/QuickBite - College 
+Canteen Pre-Order 
+(10)/QuickBite - College 
+Canteen Pre-Order 
+(4)/QuickBite - College 
+Canteen Pre-Order/node_modu
+les/.vite/deps_019afd8f_6aa
+5_75c6_b670_e0f2f24346ff/ch
+unk-4XGT5BN5.js:714:25
+    at maybeCaptureError (w
+orkers/runner-worker.js:47:
+10) {
+  remote: true
+}
+Worker error: Error: 
+internal error; reference 
+= js9egjudlc2rmci46k5s7b4h
+    at D1DatabaseSessionAlw
+aysPrimary._send (cloudflar
+e-internal:d1-api:159:26)
+    at D1DatabaseSessionAlw
+aysPrimary._sendOrThrow (cl
+oudflare-internal:d1-api:13
+5:25)
+    at cloudflare-internal:
+d1-api:348:41
+    at initializeDatabase (
+C:/Users/Narasimha/Desktop/
+QuickBite - College 
+Canteen Pre-Order 
+(10)/QuickBite - College 
+Canteen Pre-Order 
+(4)/QuickBite - College 
+Canteen Pre-Order/src/worke
+r/index.ts:89:7)
+    at C:/Users/Narasimha/D
+esktop/QuickBite - College 
+Canteen Pre-Order 
+(10)/QuickBite - College 
+Canteen Pre-Order 
+(4)/QuickBite - College 
+Canteen Pre-Order/src/worke
+r/index.ts:164:3
+    at dispatch (C:/Users/N
+arasimha/Desktop/QuickBite 
+- College Canteen 
+Pre-Order (10)/QuickBite - 
+College Canteen Pre-Order 
+(4)/QuickBite - College 
+Canteen Pre-Order/node_modu
+les/.vite/deps_019afd8f_6aa
+5_75c6_b670_e0f2f24346ff/ch
+unk-4XGT5BN5.js:36:17)
+    at C:/Users/Narasimha/D
+esktop/QuickBite - College 
+Canteen Pre-Order 
+(10)/QuickBite - College 
+Canteen Pre-Order 
+(4)/QuickBite - College 
+Canteen Pre-Order/node_modu
+les/.vite/deps_019afd8f_6aa
+5_75c6_b670_e0f2f24346ff/ch
+unk-4XGT5BN5.js:714:25
+    at maybeCaptureError (w
+orkers/runner-worker.js:47:
+10) {
+  remote: true
+}
